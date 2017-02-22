@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="770.0" style="-fx-background-color: #ccf3ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rig.controller.CustomerViewController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#customerLogout" style="-fx-background-color: #999966;" text="Logout" textAlignment="JUSTIFY" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Customer Account" textAlignment="JUSTIFY" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="fxwelcomeCus" alignment="CENTER" contentDisplay="CENTER" prefWidth="300.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="miscMsg" alignment="CENTER" contentDisplay="CENTER" prefWidth="400.0" textFill="#fc0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#placeOrder" style="-fx-background-color: #009933;" text="Place Order" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#viewOrder" style="-fx-background-color: #009933;" text="Order management" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#updateCustomer" style="-fx-background-color: #009933;" text="Update Profile" textAlignment="JUSTIFY" textFill="WHITE" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

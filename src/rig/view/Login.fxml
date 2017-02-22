@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="770.0" style="-fx-background-color: #AFCFAF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rig.controller.LoginController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <GridPane alignment="CENTER" layoutX="181.0" layoutY="205.0" prefHeight="60.0" prefWidth="307.0" AnchorPane.bottomAnchor="235.0" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="205.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="129.0" minWidth="10.0" prefWidth="88.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="206.0" minWidth="10.0" prefWidth="206.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label focusTraversable="false" text="Username" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label text="Password" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="fxusername" alignment="CENTER" prefWidth="100.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="fxlpassword" alignment="CENTER" promptText="****************" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </GridPane>
+      <Button fx:id="custlogin" layoutX="262.0" layoutY="288.0" mnemonicParsing="false" onAction="#customerLogin" style="-fx-background-color: #008B8B;" text="Customer Log In" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="356.0" layoutY="352.0" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: #228B22;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </Button>
+      <Label layoutX="80.0" layoutY="354.0" text="Not a member? Create an account by Signing up">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="Arial Narrow Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="212.0" text="*Username is your email ID." textFill="#1a01f5">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="299.0" layoutY="70.0" text="WELCOME TO">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="109.0" text="HOTEL HAZARE">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5166666666666667" centerY="0.4952380952380953" cycleMethod="REPEAT" focusAngle="-57.99" focusDistance="-0.046511627906976716" radius="1.0">
+               <stops>
+                  <Stop color="#942a60" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="mangrlogin" layoutX="401.0" layoutY="288.0" mnemonicParsing="false" onAction="#managerLogin" style="-fx-background-color: #FFC300;" text="Manager Log In" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </Button>
+      <Label fx:id="fxloginerror" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="160.0" prefHeight="20.0" prefWidth="500.0" textFill="#ff3c3c">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

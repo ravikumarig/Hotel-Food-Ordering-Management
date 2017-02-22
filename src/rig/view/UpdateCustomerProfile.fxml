@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #ccf3ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rig.controller.UpdateCustomerProfile">
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button mnemonicParsing="false" onAction="#updateProfile" style="-fx-background-color: #009933;" text="Update" textFill="WHITE" />
+				<Button mnemonicParsing="false" onAction="#cancelUpdate" style="-fx-background-color: #009933;" text="Back" textFill="WHITE" />
+			</children>
+		</HBox>
+	</bottom>
+	<top>
+		<Label text="Customer Profile" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets top="30.0" />
+			</BorderPane.margin>
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+	</top>
+   <center>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" prefWidth="70.0" />
+          <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="100.0" left="10.0" right="10.0" top="100.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="Name" textAlignment="JUSTIFY" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Password" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxUpdatename" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></TextField>
+            <PasswordField fx:id="fxUpdatePassword" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></PasswordField>
+            <TextField fx:id="fxUpdateEmail" editable="false" GridPane.columnIndex="1" />
+            <Label text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+	
+</BorderPane>

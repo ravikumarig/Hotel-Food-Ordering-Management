@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #ffb3d9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rig.controller.AddNewFoodItemController">
+   <children>
+		<Label layoutX="198.0" layoutY="39.0" text="Add Food Item">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+      <GridPane alignment="CENTER" layoutX="102.0" layoutY="91.0" prefHeight="141.0" prefWidth="296.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" />
+          <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Item Name" textAlignment="JUSTIFY" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Item Cost" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="fxAddItemId" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Item ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Item Type" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Label>
+            <ChoiceBox fx:id="itemTypeDropDown" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <TextField fx:id="fxAddItemCost" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="fxAddItemName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+		<HBox alignment="CENTER" layoutX="169.0" layoutY="259.0" prefHeight="48.0" prefWidth="163.0" spacing="20.0">
+			<children>
+				<Button mnemonicParsing="false" onAction="#addNewItem" style="-fx-background-color: #e68a00;" text="Add" textFill="WHITE" />
+				<Button mnemonicParsing="false" onAction="#cancelAddition" style="-fx-background-color: #e68a00;" text="Back" textFill="WHITE" />
+			</children>
+		</HBox>
+      <Label fx:id="additionMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="349.0" prefWidth="350.0">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
